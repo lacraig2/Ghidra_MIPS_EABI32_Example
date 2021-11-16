@@ -3,4 +3,4 @@ EXTRA_ARGS = -mabi=eabi -O0 -mno-abicalls -mfp32 -nostdlib -static -ffreestandin
 
 
 example: example.c
-	$(CC) -v $(EXTRA_ARGS) $< -o $@
+	$(CC) $(EXTRA_ARGS) $< -o $@
